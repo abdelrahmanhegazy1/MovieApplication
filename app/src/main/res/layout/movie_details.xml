@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/movieImage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/movieImage"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Mission Impossible"
+        android:id="@+id/movieName"/>
+
+    <TextView
+        android:id="@+id/movieDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movieName"
+        android:layout_toEndOf="@id/movieImage"
+        android:text="it's some details"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieRating"
+        android:layout_below="@id/movieDesc"
+        android:layout_toEndOf="@id/movieImage"
+        android:text="rating"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
