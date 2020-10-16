@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="ligh_medium_green">#f3f3f3</color>
+    <color name="fav_icon_tint">#CAC7C7</color>
+    <color name="abdo">#343148</color>
+    <color name="hegzo">#45B8AC</color>
+    <color name="best">#2A293E</color>
+    <color name="chili">#9B2335</color>
 </resources>

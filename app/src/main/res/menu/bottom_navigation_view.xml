@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Search People"
+         android:id="@+id/searchPeople"
+        android:icon="@drawable/ic_baseline_people_alt_24"/>
+    <item android:title="Search TVShows"
+        android:id="@+id/searchTV"
+        android:icon="@drawable/ic_baseline_live_tv_24"/>
+    <item android:title="Search Movies"
+        android:id="@+id/searchMovie"
+        android:icon="@drawable/ic_baseline_movie_filter_24"/>
+
+</menu>

@@ -1,8 +1,13 @@
 package com.example.movieapplication.model;
 
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.PrimaryKey;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class MoviesResult {
+public class MoviesResult implements Serializable {
 
 
     /**
@@ -48,8 +53,8 @@ public class MoviesResult {
     public void setResults(List<ResultsBean> results) {
         this.results = results;
     }
-
-    public static class ResultsBean {
+    @Entity(tableName = "movie_table")
+    public static class ResultsBean implements Serializable{
         /**
          * popularity : 2580.212
          * vote_count : 45
@@ -71,6 +76,7 @@ public class MoviesResult {
         private int vote_count;
         private boolean video;
         private String poster_path;
+        @PrimaryKey(autoGenerate = true)
         private int id;
         private boolean adult;
         private String backdrop_path;
@@ -80,7 +86,9 @@ public class MoviesResult {
         private double vote_average;
         private String overview;
         private String release_date;
+        @Ignore
         private List<Integer> genre_ids;
+
 
         public double getPopularity() {
             return popularity;
